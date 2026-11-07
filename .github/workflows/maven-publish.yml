@@ -61,4 +61,4 @@ jobs:
       
     steps:
       - name: Verify Docker image
-        run: ./verify-image.sh
+        run: verify-image.sh
