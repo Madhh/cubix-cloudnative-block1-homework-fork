@@ -47,11 +47,11 @@ jobs:
       with:
         name: java-app
     - name: Logging in to Docker
-      run: docker login ghcr.io -u Madhh -p ${{ github.token }}
+      run: docker login ghcr.io -u madhh -p ${{ github.token }}
     - name: Build the Docker image
-      run: docker build . -t ghcr.io/Madhh/cubix/1/homework/app:springboot
+      run: docker build . -t ghcr.io/madhh/cubix/1/homework/app:springboot
     - name: Publish the Docker image
-      run: docker push ghcr.io/Madhh/cubix/1/homework/app:springboot
+      run: docker push ghcr.io/madhh/cubix/1/homework/app:springboot
       
   docker_verify:
     runs-on: ubuntu-latest
