@@ -72,9 +72,9 @@ jobs:
            sleep 10
            curl --fail http://localhost:8080/application/test
            RESULT=$?
-           if [ $RESULT -ne 0 ]; then
-           echo "Verification failed, here are the logs"
-           docker logs test
+           if [ $RESULT -ne 0 ]; 
+           then echo "Verification failed, here are the logs";
+           docker logs test;
            fi
            docker stop test > /dev/null
            docker rm test > /dev/null
