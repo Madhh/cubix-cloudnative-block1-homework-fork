@@ -67,4 +67,4 @@ jobs:
       with:
         name: java-app
     - name: Verify Docker image
-      run: #!/bin/sh; verify-image.sh
+      run: !/bin/sh; verify-image.sh
